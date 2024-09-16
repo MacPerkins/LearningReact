@@ -1,0 +1,25 @@
+<html>
+  <body>
+    <div id="app"></div>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script type="text/javascript">
+      //Get the div element
+      const app = document.getElementById("app");
+
+      //Imperative programming:
+      //Create a header element
+      const header = document.createElement("h1");
+
+      //Create text to put into the h1 element
+      const text = "Develop. Preview. Ship";
+      const headerContent = document.createTextNode(text);
+
+      //Append the text to the h1 element
+      header.appendChild(headerContent);
+
+      //Add the h1 element into the div
+      app.appendChild(header);
+    </script>
+  </body>
+</html>
